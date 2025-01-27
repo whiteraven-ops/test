@@ -7,4 +7,4 @@ info:
     name: "API Support"
     url: "javascript:alert(document.domain)"
     email: "alert(document.domain)"
-  version: "1.0.1"
+  version: "1.0.3"
