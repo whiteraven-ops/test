@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Example yaml.spec
   description: |
-    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(window.origin)'>">
+    <svg><annotation-xml><foreignobject><style><!--</style><p id="--><img src='x' onerror='alert(1)'>">
 paths:
   /accounts:
     get:
