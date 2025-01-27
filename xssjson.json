@@ -1,127 +1,15 @@
-{
-  "swagger": "2.0",
-  "info": {
-    "description": "This is a sample server Petstore server. You can find out more about Swagger at [javascript:alert('Swagger Description Clicked')](javascript:alert('Swagger Description Clicked')) or on [irc.freenode.net, #swagger](javascript:alert('IRC Link Clicked')). For this sample, you can use the api key `special-key` to test the authorization filters.",
-    "version": "1.0.7",
-    "title": "Swagger Petstore",
-    "termsOfService": "javascript:alert('Terms of Service Clicked')",
-    "contact": {
-      "email": "javascript:alert('Contact Email Clicked')"
-    },
-    "license": {
-      "name": "Apache 2.0",
-      "url": "javascript:alert('License URL Clicked')"
-    }
-  },
-  "host": "petstore.swagger.io",
-  "basePath": "/v2",
-  "tags": [
-    {
-      "name": "pet",
-      "description": "Everything about your Pets",
-      "externalDocs": {
-        "description": "Find out more",
-        "url": "javascript:alert('External Docs Clicked')"
-      }
-    },
-    {
-      "name": "store",
-      "description": "Access to Petstore orders"
-    },
-    {
-      "name": "user",
-      "description": "Operations about user",
-      "externalDocs": {
-        "description": "Find out more about our store",
-        "url": "javascript:alert('User Store Docs Clicked')"
-      }
-    }
-  ],
-  "schemes": ["https", "http"],
-  "paths": {
-    "/pet/{petId}/uploadImage": {
-      "post": {
-        "tags": ["pet"],
-        "summary": "uploads an image",
-        "description": "",
-        "operationId": "uploadFile",
-        "consumes": ["multipart/form-data"],
-        "produces": ["application/json"],
-        "parameters": [
-          {
-            "name": "petId",
-            "in": "path",
-            "description": "ID of pet to update",
-            "required": true,
-            "type": "integer",
-            "format": "int64"
-          },
-          {
-            "name": "additionalMetadata",
-            "in": "formData",
-            "description": "Additional data to pass to server",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "file",
-            "in": "formData",
-            "description": "file to upload",
-            "required": false,
-            "type": "file"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "schema": {
-              "$ref": "#/definitions/ApiResponse"
-            }
-          }
-        },
-        "security": [
-          {
-            "petstore_auth": ["write:pets", "read:pets"]
-          }
-        ]
-      }
-    }
-  },
-  "securityDefinitions": {
-    "api_key": {
-      "type": "apiKey",
-      "name": "api_key",
-      "in": "header"
-    },
-    "petstore_auth": {
-      "type": "oauth2",
-      "authorizationUrl": "javascript:alert('Authorization URL Clicked')",
-      "flow": "implicit",
-      "scopes": {
-        "read:pets": "read your pets",
-        "write:pets": "modify pets in your account"
-      }
-    }
-  },
-  "definitions": {
-    "ApiResponse": {
-      "type": "object",
-      "properties": {
-        "code": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "type": {
-          "type": "string"
-        },
-        "message": {
-          "type": "string"
-        }
-      }
-    }
-  },
-  "externalDocs": {
-    "description": "Find out more about Swagger",
-    "url": "javascript:alert('External Docs Clicked')"
-  }
-}
+swagger: '2.0'
+info:
+  title: Example yaml.spec
+  description: |
+    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(window.origin)'>">
+paths:
+  /accounts:
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+        - accounts
+      operationId: findAccounts
+      summary: Finds all accounts
